@@ -10,7 +10,7 @@ int[] arr = FillArrayWithRandomNumbers(arrLength, leftRange, rightRange);
 System.Console.WriteLine("[" + string.Join(", ", arr) + "]");
 
 int sum = 0;
-for (int i = 0; i < arr.Length; i+=2)
+for (int i = 1; i < arr.Length; i+=2)
     sum += arr[i];
 Console.WriteLine($"Всего чисел {arr.Length}. Сумма элементов, стоящих на нечётных позициях = {sum}");
 
